@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Imagen Informativa</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+
+  <body>
+    <main id="tarjeta">
+      <div class="receta-item">
+        <img src="img/la.jpg" alt="lasaña" id="img-la" onclick="mostrarReceta('info-lasaña')">
+
+        <div id="info-lasaña" class="info-receta">
+          <div class="receta-contenido">
+            <div class="contenido-dividido">
+              <div class="receta-texto">
+                <h1>Lasaña</h1>
+                <h3>Ingredientes</h3>
+                <lu>
+                  <li>1- Pasta</li>
+                  <li>2- Salsa de tomate</li>
+                  <li>3- Carne</li>
+                  <li>4- Queso</li>
+                </lu>
+                <h3> Procedimiento</h3>
+                <p>Primero la salsa de carne, luego algunas láminas de lasaña, después más salsa, luego queso. Se repite hasta que se acabe la salsa, pero terminando con una capa de queso. Confía en el proceso con las láminas de lasaña que no necesitan hervir. El producto final se asienta mucho mejor y se obtienen rebanadas bien limpias.</p>
+              </div>
+              <div class="receta-imagen">
+                <img src="img/la.jpg">
+              </div>
+            </div>
+            <button class="boton-cerrar" onclick="cerrarReceta('info-lasaña')">Cerrar receta</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="ejecucion.js"></script>
+  </body>
+</html>
